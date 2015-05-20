@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Image Sprites</title>
+    <style>
+        .img_bdg{
+            background-image: url("sprite1.jpg");
+            width: 65px;
+            height: 65px;
+            background-position: -44px -36px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            var option = document.querySelector('#drop');
+            option.addEventListener('click', function(event){
+                console.log(event.target.value);
+                var element = document.querySelector('div.img_bdg');
+                $(element).css({backgroundColor: 'Green' });
+            });
+        });
+    </script>
+</head>
+<body>
+    <select id="drop">
+        <option value="select" selected>Please Select</option>
+        <option value="1">Twitter</option>
+        <option value="2">RSS Feed</option>
+        <option value="3">Facebook</option>
+        <option value="4">Pink Ball</option>
+        <option value="5">Google+</option>
+        <option value="6">Letter P</option>
+        <option value="7">Evernote</option>
+        <option value="8">Letter V</option>
+        <option value="9">Youtube</option>
+        <option value="10">Linkedin</option>
+        <option value="11">Dots</option>
+        <option value="12">Tree</option>
+        <option value="13">Be</option>
+        <option value="14">Letter Z</option>
+        <option value="15">Letter T</option>
+        <option value="16">Symbol</option>
+        <option value="17">Digg</option>
+        <option value="18">Letter W</option>
+    </select>
+    <div class="img_bdg">
+
+    </div>
+    <img src="sprite1.jpg"/>
+</body>
+</html>
