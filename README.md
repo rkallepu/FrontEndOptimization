@@ -1,2 +1,2 @@
-# magellan-May-18
-Front End Optimization
+# Front End Optimization
+Implementing some Front End Optimization Techniques
